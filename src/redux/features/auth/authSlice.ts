@@ -26,7 +26,6 @@ const authSlice = createSlice({
       const { user, token } = action.payload;
       state.user = user;
       state.token = token;
-      localStorage.setItem("navigateTo", "null");
     },
     logout: (state) => {
       state.user = null;

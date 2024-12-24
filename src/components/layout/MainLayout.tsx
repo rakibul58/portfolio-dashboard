@@ -1,6 +1,4 @@
 import { Outlet, useLocation } from "react-router-dom";
-import Navbar from "../shared/Navbar";
-import Footer from "../shared/Footer";
 import { useEffect } from "react";
 
 const MainLayout = () => {
@@ -12,9 +10,7 @@ const MainLayout = () => {
   }, [pathname]);
   return (
     <div className="w-full max-w-7xl min-h-screen mx-auto px-4 lg:px-0">
-      <Navbar />
       <Outlet />
-      <Footer />
     </div>
   );
 };

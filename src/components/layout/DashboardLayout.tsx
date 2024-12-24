@@ -1,14 +1,16 @@
 import { Outlet } from "react-router-dom";
-import Sidebar from "../shared/Sidebar";
+import { SidebarProvider, SidebarTrigger } from "../ui/sidebar";
+import { AppSidebar } from "../shared/AppSidebar";
 
 const DashboardLayout = () => {
   return (
-    <div className="flex flex-col md:flex-row items-start">
-      <Sidebar />
-      <div className="max-w-6xl w-full mx-auto p-2 md:p-16">
+    <SidebarProvider>
+      <AppSidebar />
+      <main className="w-full h-screen overflow-y-auto flex items-start">
+        <SidebarTrigger />
         <Outlet />
-      </div>
-    </div>
+      </main>
+    </SidebarProvider>
   );
 };
 

@@ -1,8 +1,8 @@
-# SteerAway
+# Portfolio Dashboard
 
-## Car Rental Reservation System
+## Portfolio Dashboard Management
 
-[Live URL](https://steer-away-rental.vercel.app/)
+[Live URL](https://developers-dashboard-liart.vercel.app/)
 
 ### Table of Contents
 
@@ -11,26 +11,24 @@
 - [Technologies Used](#technologies-used)
 - [Usage Guide](#usage-guide)
 - [Usage](#usage)
-- [Credentials](#Credentials)
 - [Contact](#contact)
 
 ## Project Overview
 
-SteerAway is a comprehensive car rental reservation system backend with features for booking and managing car rentals. Users can easily search for available cars, make booking, and admin can manage bookings and returns.
+Portfolio Dashboard For Managing the Dashboard of the Portfolio.
 
 ## Features
 
-- **User Authentication:** Secure sign-up and login functionality.
-- **Car Search and Filter:** Admin can filter bookings based on carId and date.
-- **Booking Management:** Users can view the cars, book it if available.
-- **Admin:** Manage cars, bookings.
+- **User Authentication:** Secure login functionality.
+- **Create Blogs:** Admin can Create Blogs.
+- **Management:** Admin can manage portfolio information.
 
 ## Technologies Used
 
 - **Frontend:** Typescript, React
-- **Backend:** Typescript, Node.js, Express
-- **ODM:** Mongoose
-- **Database:** MongoDB
+- **Style:** Tailwind CSS
+- **Components:** ShadCN
+- **Animation:** Framer Motion
 - **Deployment:** Vercel
 
 ## Usage Guide
@@ -46,7 +44,7 @@ Open command prompt(`cmd`) in folder where you want to add the project.
 Run the following command to clone the repository:
 
 ```
-git clone https://github.com/rakibul58/steerAway-client-assignment-5
+git clone https://github.com/rakibul58/portfolio-dashboard.git
 ```
 
 ### Step 3
@@ -54,7 +52,7 @@ git clone https://github.com/rakibul58/steerAway-client-assignment-5
 Open the cloned folder or run the following in cmd:
 
 ```
-cd steerAway-client-assignment-5
+cd portfolio-dashboard
 ```
 
 ### Step 4
@@ -80,7 +78,7 @@ VITE_CLOUDINARY_PRESET=
 Run the following code to start the development server:
 
 ```
-npm run start
+npm start
 ```
 
 Other commands can be found in package.json scripts
@@ -88,18 +86,6 @@ Other commands can be found in package.json scripts
 ## Usage
 
 Once the application is set up and running, you can access it at http://localhost:5000 (or the appropriate port if specified differently). From there, you can create an account, log in, and start booking cars.
-
-## Credentials
-
-### Admin Credentials
-
-- **Email:** admin@test.com
-- **Password:** admin123
-
-### User Credentials
-
-- **Email:** user@test.com
-- **Password:** user123
 
 ## Contact
 
