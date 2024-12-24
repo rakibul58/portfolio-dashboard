@@ -60,7 +60,7 @@ cd portfolio-dashboard
 In the cloned folder run the following command on cmd:
 
 ```
-npm install
+npm run dev
 ```
 
 ### Step 5
