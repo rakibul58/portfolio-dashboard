@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
@@ -67,7 +68,7 @@ const SignIn = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-background to-secondary/30 flex items-center justify-center p-4">
+    <section className="min-h-screen flex items-center justify-center p-4">
       <motion.div
         className="w-full max-w-md"
         initial="hidden"

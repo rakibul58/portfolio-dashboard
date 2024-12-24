@@ -5,6 +5,7 @@ import DashboardLayout from "@/components/layout/DashboardLayout";
 import SignIn from "@/pages/SignIn";
 import Dashboard from "@/pages/Dashboard/Dashboard";
 import ProtectedRoute from "@/components/layout/ProtectedRoute";
+import AboutDashboard from "@/pages/Dashboard/AboutDashboard";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard />,
+      },
+      {
+        path: "/dashboard/about",
+        element: <AboutDashboard />,
       }
     ],
   }
