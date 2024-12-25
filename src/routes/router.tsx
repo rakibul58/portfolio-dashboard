@@ -7,6 +7,7 @@ import Dashboard from "@/pages/Dashboard/Dashboard";
 import ProtectedRoute from "@/components/layout/ProtectedRoute";
 import AboutDashboard from "@/pages/Dashboard/AboutDashboard";
 import BlogDashboard from "@/pages/Dashboard/BlogDashboard";
+import ProjectDashboard from "@/pages/Dashboard/ProjectDashboard";
 
 export const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ export const router = createBrowserRouter([
       {
         path: "/dashboard/blogs",
         element: <BlogDashboard />,
+      },
+      {
+        path: "/dashboard/projects",
+        element: <ProjectDashboard />,
       }
     ],
   }

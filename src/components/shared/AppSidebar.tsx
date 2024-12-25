@@ -1,9 +1,11 @@
 import {
   Book,
+  Briefcase,
+  GraduationCap,
   Home,
+  Layers,
   LayoutDashboardIcon,
   LogOut,
-  Settings,
   User,
 } from "lucide-react";
 
@@ -44,9 +46,19 @@ const items = [
     icon: Book,
   },
   {
-    title: "Settings",
-    url: "#",
-    icon: Settings,
+    title: "Projects",
+    url: "/dashboard/projects",
+    icon: Layers,
+  },
+  {
+    title: "Experience",
+    url: "/dashboard/experience",
+    icon: Briefcase,
+  },
+  {
+    title: "Education",
+    url: "/dashboard/education",
+    icon: GraduationCap,
   },
 ];
 
