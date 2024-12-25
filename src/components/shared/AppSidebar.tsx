@@ -1,10 +1,10 @@
 import {
-  Calendar,
+  Book,
   Home,
   LayoutDashboardIcon,
   LogOut,
-  Search,
   Settings,
+  User,
 } from "lucide-react";
 
 import {
@@ -34,14 +34,14 @@ const items = [
     icon: LayoutDashboardIcon,
   },
   {
-    title: "Calendar",
-    url: "#",
-    icon: Calendar,
+    title: "About",
+    url: "/dashboard/about",
+    icon: User,
   },
   {
-    title: "Search",
-    url: "#",
-    icon: Search,
+    title: "Blogs",
+    url: "/dashboard/blogs",
+    icon: Book,
   },
   {
     title: "Settings",
@@ -49,8 +49,6 @@ const items = [
     icon: Settings,
   },
 ];
-
-
 
 export function AppSidebar() {
   const dispatch = useAppDispatch();
@@ -73,7 +71,10 @@ export function AppSidebar() {
               ))}
               <SidebarMenuItem>
                 <SidebarMenuButton asChild>
-                  <div onClick={() => dispatch(logout())} className="flex items-center">
+                  <div
+                    onClick={() => dispatch(logout())}
+                    className="flex items-center"
+                  >
                     {" "}
                     <LogOut className="size-4" />
                     <span>Logout</span>
