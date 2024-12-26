@@ -8,6 +8,8 @@ import ProtectedRoute from "@/components/layout/ProtectedRoute";
 import AboutDashboard from "@/pages/Dashboard/AboutDashboard";
 import BlogDashboard from "@/pages/Dashboard/BlogDashboard";
 import ProjectDashboard from "@/pages/Dashboard/ProjectDashboard";
+import ExperienceDashboard from "@/pages/Dashboard/ExperienceDashboard";
+import EducationDashboard from "@/pages/Dashboard/EducationDashboard";
 
 export const router = createBrowserRouter([
   {
@@ -18,7 +20,7 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <SignIn />,
-      }
+      },
     ],
   },
   {
@@ -45,7 +47,15 @@ export const router = createBrowserRouter([
       {
         path: "/dashboard/projects",
         element: <ProjectDashboard />,
-      }
+      },
+      {
+        path: "/dashboard/experience",
+        element: <ExperienceDashboard />,
+      },
+      {
+        path: "/dashboard/education",
+        element: <EducationDashboard />,
+      },
     ],
-  }
+  },
 ]);
