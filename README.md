@@ -71,6 +71,7 @@ On the root directory add a `.env` file and add your database url and other envi
 VITE_SERVER_API=
 VITE_CLOUDINARY_URI=
 VITE_CLOUDINARY_PRESET=
+VITE_TINYMCE_API_KEY=
 ```
 
 ### Step 6
